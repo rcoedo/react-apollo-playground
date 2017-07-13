@@ -1,0 +1,43 @@
+{
+  "name": "react-apollo-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-client": "^1.8.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "casual": "^1.5.14",
+    "classnames": "^2.2.5",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "graphql": "^0.10.3",
+    "graphql-server-express": "^1.0.0",
+    "graphql-tools": "^1.1.0",
+    "nodemon": "^1.11.0",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-apollo": "^1.4.3",
+    "react-dom": "^15.6.1",
+    "react-google-login": "^2.9.2",
+    "react-google-login-component": "^0.7.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.1.8"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "clean": "rm -rf ./lib",
+    "compile": "babel -d lib/ src/",
+    "start": "NODE_PATH=src/ npm run storybook",
+    "server": "PORT=3002 nodemon ./server/server.js --exec babel-node",
+    "storybook": "start-storybook -p 3001"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "stage-3",
+    "react"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-export-extensions",
+    [
+      "module-resolver",
+      {
+       "root": ["./src"],
+       "alias": {
+          "stories": "./stories",
+          "server": "./server"
+        }
+      }
+    ]
+  ]
+}
